@@ -1,4 +1,6 @@
-
+# Approach 1:
+# Time: O(nlogn)
+# Space: O(n)
 def quick_sort(arr):
     if len(arr) <= 1:
         return arr
@@ -21,6 +23,34 @@ def quick_sort(arr):
 arr = [3, 6, 8, 10, 1, 2, 1]
 sorted_arr = quick_sort(arr)
 print(sorted_arr)
+
+# Approach 2
+# Space: O(log(n)), Time: O(nlogn)
+
+
+def partition(nums,low,high):
+    
+    i=low-1
+    pivot=high
+    for j in range(low,high):
+        if nums[j]<nums[pivot]:
+            i=i+1
+            nums[i],nums[j]=nums[j],nums[i]
+        
+    nums[pivot],nums[i+1]=nums[i+1],nums[pivot]
+    return i+1    
+
+def quick_sort(nums,low,high):
+    if low<high:
+       pivot= partition(nums,low,high)
+       quick_sort(nums,low,pivot-1)
+       quick_sort(nums,pivot+1,high)
+   
+   
+r=[3,2,1,4,6,5]
+quick_sort(r,0,len(r)-1)
+print(r)
+        
 """
 Quicksort is a divide-and-conquer algorithm. It works by selecting a 'pivot' element 
 from the array and partitioning the other elements into two sub-arrays, according to 
