@@ -51,3 +51,7 @@ partitions, it can lead to a time complexity of O(n^2). However, on average, qui
 So, the overall time complexity of this code is O(n^2) in the worst case and O(n log n) on average, which is the expected 
 performance of the quicksort algorithm. Keep in mind that the choice of the pivot element can influence the actual performance, and
 certain pivot selection strategies can improve the worst-case behavior."""
+#it is not stable
+#it is not in place
+#best and average time complexity is O(nlogn)
+#worst is O(n^2)
