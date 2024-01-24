@@ -3,7 +3,7 @@ def quick_sort(arr):
     if len(arr) <= 1:
         return arr
 
-    pivot_index = len(arr) // 2
+    
     pivot = arr[0]
     left, right, equal = [], [], []
 
