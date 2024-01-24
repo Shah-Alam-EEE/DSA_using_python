@@ -9,7 +9,7 @@ def inser_sort(n):
                 icnt=icnt-1
             else:
                 break    
-arr = [1, 1, 13, 5, 6]
+arr = [1, 1, 13, 5]
 inser_sort(arr)            
 print("Sorted array:", arr)
 
