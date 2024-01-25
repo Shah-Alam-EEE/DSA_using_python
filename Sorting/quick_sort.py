@@ -50,6 +50,29 @@ def quick_sort(nums,low,high):
 r=[3,2,1,4,6,5]
 quick_sort(r,0,len(r)-1)
 print(r)
+
+# Approach 3
+def quickSort(arr, low, high):
+    pivot = arr[(low + high) // 2]
+    left, right = low, high
+
+    while left <= right:
+        while arr[left] < pivot:
+            left += 1
+        while arr[right] > pivot:
+            right -= 1
+        if left <= right:
+            arr[left], arr[right] = arr[right], arr[left]
+            left += 1
+            right -= 1
+
+    if low < right:
+        quickSort(arr, low, right)
+    if left < high:
+        quickSort(arr, left, high)
+my_list = [7, 29, 15, 36, 24, 20, 18, 30, 12]
+quickSort(my_list, 0, len(my_list) - 1)
+print(my_list)
         
 """
 Quicksort is a divide-and-conquer algorithm. It works by selecting a 'pivot' element 
