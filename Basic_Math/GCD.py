@@ -55,6 +55,6 @@ print(GCD(1,5))
 def gcd(a,b):
     if b==0:
         return a
-    gcd(b,a%b)
-
+    return gcd(b,a%b)
+print(gcd(10,5))
 # Time: O(log(n)). Space: O(log(n)) where n is the smaller num. 
