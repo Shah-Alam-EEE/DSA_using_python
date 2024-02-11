@@ -17,3 +17,4 @@ if __name__=="__main__":
     print(is_prime(n)) 
 
 # Time: O(sqrt(n)). Space: O(1)
+

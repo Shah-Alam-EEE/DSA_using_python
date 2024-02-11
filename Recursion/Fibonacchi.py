@@ -18,7 +18,7 @@ def fib(n):
        z=x+y
        x=y
        y=z  
-    return y  
+    return z  
 print(fib(5))
 
 # Time: O(n), Space:O(1)    
