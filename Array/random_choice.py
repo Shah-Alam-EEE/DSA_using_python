@@ -5,7 +5,7 @@ x=[3,2,4,1,5]
 print(random.randint(10,20))
 
 
-# Approach 2
+# Approach 2 LCG(linear congruential generator) algorithm
 
 import time
 
