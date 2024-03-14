@@ -58,3 +58,4 @@ def gcd(a,b):
     return gcd(b,a%b)
 print(gcd(10,5))
 # Time: O(log(n)). Space: O(log(n)) where n is the smaller num. 
+
