@@ -22,7 +22,7 @@ class Solution:
                     matrix[k][j]=0
         return matrix
     
-# Approach 2: Time: O(m*n*(m or n)), Space:O(1)
+# Approach 2: Time: O(m*n*max(m, n)), Space:O(m*n)
 
     
 import copy

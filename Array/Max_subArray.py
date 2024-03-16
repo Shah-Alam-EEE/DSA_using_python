@@ -57,24 +57,3 @@ def maxSum(nums, left, right):
     
     return max(leftSide, rightSide, subArray)
 
-
-
-def permute(nums):
-    def permutation(arr, used, temp):
-        if len(temp) == n:
-            res.append(temp[:])
-            return
-        for i in range(n):
-            if nums[i] not in used:
-                used.add(nums[i])
-                temp.append(nums[i])
-                permutation(arr, used, temp)
-                temp.pop()
-                used.remove(nums[i])
-
-    res = []
-    used = set()
-    temp = []
-    n = len(nums)
-    permutation(nums, used, temp)
-    return res

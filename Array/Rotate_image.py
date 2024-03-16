@@ -1,6 +1,6 @@
 # Problem: https://leetcode.com/problems/rotate-image/description/
 
-# Approach 1: Time:O(m*n), Space:O(m*n)
+# Approach 1: Time:O(m*n), Space:O(m*n) this solution is based on common sequence or index
 
 class Solution:
     def rotate(self, matrix: List[List[int]]) -> None:
